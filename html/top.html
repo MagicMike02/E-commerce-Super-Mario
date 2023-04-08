@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="it">
+   <head>
+		<!-- Top dell apagina comune nel sito web -->
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <!-- FAVICO	-->
+      <link
+         href="../assets/fungo-ico.ico"
+         type="image/icon"
+         rel="shortcut icon"
+      />
+
+      <link href="../css/top.css" type="text/css" rel="stylesheet" />
+      <link href="../css/bottom.css" type="text/css" rel="stylesheet" />
+      <link href="../css/login.css" type="text/css" rel="stylesheet" />
+      <link href="../css/signin.css" type="text/css" rel="stylesheet" />
+      <link href="../css/homepage.css" type="text/css" rel="stylesheet" />
+      <link href="../css/product.css" type="text/css" rel="stylesheet" />
+      <link href="../css/contact-form.css" type="text/css" rel="stylesheet" />
+      <link href="../css/carousel.css" type="text/css" rel="stylesheet" />
+      <link href="../css/carrello.css" type="text/css" rel="stylesheet" />
+      <link href="../css/homepageAdmin.css" type="text/css" rel="stylesheet" />
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+      <script
+         src="https://kit.fontawesome.com/a076d05399.js"
+         crossorigin="anonymous"
+      ></script>
+
+      <script src="../js/login_signup.js"></script>
+      <script src="../js/homepage.js"></script>
+      <script src="../js/product.js"></script>
+      <script src="../js/carrello.js"></script>
+      <script src="../js/homepageAdmin.js"></script>
+
+      <title>Super Mario Shop</title>
+   </head>
+   <body>
+      <?php
+		if (!isset($_SESSION)){ 
+			session_start(); 
+		} 
+	?>
+      <nav id="navbar">
+         <ul id="ul-img-logo">
+            <li>
+               <a href="../php/homepage.php">
+                  <img
+                     id="draggableElem"
+                     class="logo-icona"
+                     src="../assets/navbar/fungo.png"
+                     alt="Logo"
+                  />
+               </a>
+            </li>
+         </ul>
+
+         <ul id="ul-links">
+            <li id="shop">
+               <a href="../php/homepage.php#categories"> SHOP </a>
+            </li>
+
+            <li id="about-us">
+               <a href="../php/homepage.php#about-us-section"> ABOUT US </a>
+            </li>
+
+            <li id="contacts">
+               <a href="../php/homepage.php#contac-us-container"> CONTACTS </a>
+            </li>
+         </ul>
+
+         <ul id="ul-img-user">
+            <li id="carrello">
+               <a href="carrello.php">
+                  <img
+                     id="droppableZone"
+                     class="logo-carrello"
+                     src="../assets/navbar/carrello.png"
+                     alt="Logo"
+                  />
+               </a>
+            </li>
+            <li id="profilo">
+               <a href="profilo.php"> PROFILO </a>
+            </li>
+            <li id="logout">
+               <a href="logout.php"> LOGOUT </a>
+            </li>
+         </ul>
+      </nav>
+   </body>
+</html>

@@ -1,0 +1,30 @@
+#dashboard-wrapper > ul {
+   display: flex;
+   justify-content: space-evenly;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+#dashboard-wrapper button {
+   color: black;
+   border-radius: 3px;
+}
+
+/*cambio colore bottoni e testo*/
+#addAdminBtn {
+   background-color: lightgreen;
+}
+#addProductBtn {
+   background-color: cyan;
+}
+#deleteProductBtn {
+   background-color: red;
+}
+#modifyProductBtn {
+   background-color: darkorange;
+}
+
+#adminForms {
+   margin: 5% 20%;
+}

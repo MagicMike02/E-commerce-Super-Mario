@@ -1,0 +1,68 @@
+#main-form {
+   margin: 2% 25%;
+}
+
+#article-form {
+   padding: 8% 10% 8% 10%;
+   margin: auto;
+}
+
+#article-form h2 {
+   text-align: center;
+}
+
+form {
+   border: 3px solid #f1f1f1;
+}
+
+input[type="text"],
+input[type="password"] {
+   width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   box-sizing: border-box;
+}
+
+.text-center {
+   margin: auto;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+/* button */
+#loginbtn {
+   background-color: darkgreen;
+   color: white;
+   padding: 14px 20px;
+   margin: 8px 0;
+   border: none;
+   cursor: pointer;
+   width: 100%;
+}
+#loginAdminbtn {
+   background-color: #006400;
+   color: white;
+   padding: 14px 20px;
+   margin: 8px 0;
+   border: none;
+   cursor: pointer;
+   width: 100%;
+}
+
+button:hover {
+   opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+   #main-form {
+      margin: 2% 10%;
+   }
+}
+/* @media screen and (min-width: 768px) {
+   main {
+      margin: 2% 10%;
+   }
+} */
